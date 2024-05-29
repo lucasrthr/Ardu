@@ -15,7 +15,7 @@ const char topic[]  = "real_unique_topic";                                      
 
 
 //set interval for sending messages (milliseconds)
-const long interval = 8000;
+const long interval = 10000;
 unsigned long previousMillis = 0;
 
 int count = 0;
