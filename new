@@ -3,15 +3,15 @@
 
 
 ///////please enter your sensitive data in the Secret tab/arduino_secrets.h
-char ssid[] = SECRET_SSID;        // your network SSID (name)
-char pass[] = SECRET_PASS;    // your network password (use for WPA, or use as key for WEP)
+char ssid[] = Blackhole;        // your network SSID (name)
+char pass[] = 3-body-problem;    // your network password (use for WPA, or use as key for WEP)
 
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 
-const char broker[] = "test.mosquitto.org";                                                      //Broker
+const char broker[] = "192.168.4.1";                                                      //Broker
 int        port     = 1883;
-const char topic[]  = "real_unique_topic";                                                      //Channel
+const char topic[]  = "LucasRother";                                                      //Channel
 
 
 //set interval for sending messages (milliseconds)
@@ -65,7 +65,7 @@ void loop() {
     previousMillis = currentMillis;
 
     //record random value from A0, A1 and A2
-    int Rvalue = "TEST";                                                                               //Value                                   
+    int Rvalue = "We are MQTT of Borg. You will be transmitted";                                                                               //Value                                   
 
 
     Serial.print("Sending message to topic: ");
